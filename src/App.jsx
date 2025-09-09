@@ -4,7 +4,8 @@ import { AppContext } from "./context/ApiContext";
 
 import Header from "./components/Header";
 
-import Feed from './pages/Feed';
+import Feed from "./pages/Feed";
+import VideoDetails from "./pages/VideoDetails";
 
 const AppLayout = () => {
   return (
@@ -21,10 +22,14 @@ const appRouter = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: '/',
-        element: <Feed />
-      }
-    ]
+        path: "/",
+        element: <Feed />,
+      },
+      {
+        path: "/video/:id",
+        element: <VideoDetails />,
+      },
+    ],
   },
 ]);
 
