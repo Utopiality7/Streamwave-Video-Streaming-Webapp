@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { UserButton } from "@clerk/clerk-react";
 
 import { DataContext } from "../../context/ApiContext";
 import Loader from "../../shared/Loader";
@@ -51,12 +52,9 @@ const Header = () => {
         </div>
 
         <div className="flex h-8 w-8 mt-1 overflow-hidden rounded-full md:ml-4">
-          <Link to={"https://github.com/utopiality7"}>
-            <img
-              src="https://avatars.githubusercontent.com/u/182320108?v=4"
-              alt="user-icon"
-            />
-          </Link>
+          <div className="flex items-center md:ml-4">
+            <UserButton signOutUrl="/" />
+          </div>
         </div>
       </div>
     </div>

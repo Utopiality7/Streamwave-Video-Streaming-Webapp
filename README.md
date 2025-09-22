@@ -2,6 +2,8 @@
 
 Streamwave is a video streaming web app akin to YouTube, leveraging the power of React. Viewers can explore a vast library of content, enjoy high-quality streaming, and interact through comments, likes, and subscriptions. The application boasts an intuitive user interface, responsive design, and robust video playback capabilities, delivering an engaging and immersive video-sharing experience.
 
+<img src="https://github.com/user-attachments/assets/b91ebfb9-7dd5-4890-87eb-2e580d134ef1" />
+
 #
 
 ### Features
